@@ -162,14 +162,10 @@ section{position:relative;}
 .contact-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,5rem);font-weight:600;line-height:1;color:var(--heading);margin-bottom:22px;}
 .contact-left h2 em{font-style:italic;color:var(--wine-light);}
 .contact-left p{font-size:.8rem;line-height:2;color:var(--text-body);margin-bottom:32px;}
-.contact-links{display:flex;flex-direction:column;gap:12px;}
-.contact-link-item{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text-body);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;transition:color .3s;}
-.contact-link-item:hover{color:var(--gold);}
-.contact-link-item svg{width:14px;height:14px;flex-shrink:0;}
-.social-row{display:flex;gap:12px;margin-top:28px;}
-.social-link{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid rgba(107,33,48,.35);color:var(--wine-light);text-decoration:none;transition:border-color .3s,background .3s;}
-.social-link:hover{border-color:var(--wine-light);background:rgba(107,33,48,.1);}
-.social-link svg{width:14px;height:14px;}
+.contact-channels{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
+.contact-channel{display:flex;align-items:center;gap:10px;border:1px solid rgba(107,33,48,.35);padding:11px 18px;text-decoration:none;color:var(--text-body);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;transition:border-color .3s,background .3s,color .3s;}
+.contact-channel:hover{border-color:var(--wine-light);background:rgba(107,33,48,.1);color:var(--gold-light);}
+.contact-channel svg{width:15px;height:15px;flex-shrink:0;color:var(--wine-light);}
 .contact-form{display:flex;flex-direction:column;gap:2px;}
 .form-group{display:flex;flex-direction:column;gap:6px;}
 .form-label{font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);}
@@ -565,22 +561,22 @@ footer{padding:36px 60px;border-top:1px solid rgba(107,33,48,.15);display:flex;j
       <h2>Let's<br><em>Connect</em></h2>
       <p class="en">Piano lessons, ballet music collaboration, or performance enquiries — all welcome.</p>
       <p class="zh">鋼琴課程諮詢、芭蕾音樂合作，或演出邀約，歡迎聯繫。</p>
-      <div class="contact-links">
-        <a href="https://www.instagram.com/violetta.museart?igsh=YWxtcmJwYjk0Mmwx&utm_source=qr" target="_blank" class="contact-link-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
-          <span class="en">Instagram</span><span class="zh">Instagram</span>
-        </a>
-        <a href="mailto:musevioletta@gmail.com" class="contact-link-item">
+      <div class="contact-channels">
+        <a href="mailto:musevioletta@gmail.com" class="contact-channel">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-          musevioletta@gmail.com
+          <span>Email</span>
         </a>
-      </div>
-      <div class="social-row">
-        <a href="https://m.youtube.com/@violetta_worldofart" target="_blank" class="social-link" title="YouTube">
-          <svg viewBox="0 0 24 24" fill="var(--wine-light)" stroke="none"><path d="M21.8 8s-.2-1.4-.8-2a2.9 2.9 0 0 0-2-.8C17 5 12 5 12 5s-5 0-7 .2a2.9 2.9 0 0 0-2 .8C2.4 6.6 2.2 8 2.2 8S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2a3 3 0 0 0 2 .8C7 19 12 19 12 19s5 0 7-.2a3 3 0 0 0 2-.8c.6-.7.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.2 3-5.2 3z"/></svg>
+        <a href="https://www.instagram.com/violetta.museart?igsh=YWxtcmJwYjk0Mmwx&utm_source=qr" target="_blank" class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          <span>Instagram</span>
         </a>
-        <a href="https://www.instagram.com/violetta.museart?igsh=YWxtcmJwYjk0Mmwx&utm_source=qr" target="_blank" class="social-link" title="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--wine-light)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.1" fill="var(--wine-light)" stroke="none"/></svg>
+        <a href="https://lin.ee/TDhGqSvS" target="_blank" class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M17 12c0-2.76-2.69-5-6-5s-6 2.24-6 5c0 2.47 2.19 4.54 5.15 4.93.2.04.47.13.54.3.06.15.04.39.02.54l-.09.52c-.03.16-.12.61.54.33.65-.28 3.52-2.07 4.8-3.54C16.61 14.3 17 13.21 17 12z"/></svg>
+          <span>LINE</span>
+        </a>
+        <a href="https://m.youtube.com/@violetta_worldofart" target="_blank" class="contact-channel">
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M21.8 8s-.2-1.4-.8-2a2.9 2.9 0 0 0-2-.8C17 5 12 5 12 5s-5 0-7 .2a2.9 2.9 0 0 0-2 .8C2.4 6.6 2.2 8 2.2 8S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2a3 3 0 0 0 2 .8C7 19 12 19 12 19s5 0 7-.2a3 3 0 0 0 2-.8c.6-.7.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l5.2 3-5.2 3z"/></svg>
+          <span>YouTube</span>
         </a>
       </div>
     </div>
